@@ -2,6 +2,7 @@
 
 // Import the discord.js module
 const Discord = require('discord.js');
+const mySecret = process.env['DISCORD_TOKEN']
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
@@ -48,4 +49,4 @@ client.on('message', message => {
   }
 });
 // Log our bot in using the token from https://discord.com/developers/applications
-client.login('ODQyNzk3NTg5NTk3NjUwOTU1.YJ6iaw.gqLdgm-gZlG3UNykyq-dNMbl4T4');
+client.login(mySecret);
